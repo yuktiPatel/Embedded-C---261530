@@ -19,30 +19,30 @@ uint16_t OutPWM (uint16_t value)
 
     if((value>=0) && (value<=209)){
 
-        OUTPUT_COMPAIR_REGISTERA = 205; //20% duty cycle
+        OUTPUT_COMPAIR_REGISTERA = 205; 
         temperature = 20;
         _delay_ms(20);
     }
     else if((value>=210) && (value<=509)){
 
-        OUTPUT_COMPAIR_REGISTERA = 410; //40% duty cycle
+        OUTPUT_COMPAIR_REGISTERA = 410;
         temperature = 25;
        _delay_ms(20);
     }
     else if((value>=510) && (value<=709)){
 
-        OUTPUT_COMPAIR_REGISTERA = 717;//70% duty cycle
+        OUTPUT_COMPAIR_REGISTERA = 717;
         temperature = 29;
         _delay_ms(20);
     }
     else if((value>=710) && (value<=1024)){
 
-        OUTPUT_COMPAIR_REGISTERA = 973; //95% duty cycle
+        OUTPUT_COMPAIR_REGISTERA = 973; 
         temperature = 33;
         _delay_ms(20);
     }
     else{
-        OUTPUT_COMPAIR_REGISTERA = 0; //0% output
+        OUTPUT_COMPAIR_REGISTERA = 0;
         temperature = 0;
     }
     return temperature;
