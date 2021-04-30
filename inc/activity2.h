@@ -11,8 +11,19 @@
 #define ADC_START_CONVERSION ADSC/* ADC START CONVERSION BIT  */
 #define ADC_INTERRUPTFLAG ADIF/* ADC INTERUPT FLAG BIT  */
 
+/**
+ * @brief to read ADC
+ * 
+ * @param ch 
+ * @return uint16_t 
+ */
 
 uint16_t ReadADC(uint8_t ch);
+
+/**
+ * @brief to initialize ADC
+ * 
+ */
 
 void InitADC();
 
